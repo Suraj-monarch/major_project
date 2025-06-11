@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import joblib
 
 # Load dataset
-df = pd.read_csv("data/cloud_sales_forecasting_3lakh.csv")
+df = pd.read_csv('cloud_sales_forecasting_3lakh.csv')
 
 # Convert 'Date' to datetime and extract features
 df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')
